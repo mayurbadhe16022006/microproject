@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zero Hunger | Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>How You Can Help</h1></header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="p2.html">Causes</a>
+    <a href="pp.html">Solutions</a>
+    <a href="sk.html">How You Can Help</a>
+    <a href="j1.html">Contact</a>
+</nav>
+<div class="container">
+    <div class="card">
+        <h2>Make a Difference</h2>
+        <ul id="helpList">
+            <li>Donate food or funds to food banks</li>
+            <li>Volunteer at community kitchens</li>
+            <li>Support sustainable farming projects</li>
+            <li>Reduce food waste at home</li>
+            <li>Use social media to spread awareness</li>
+        </ul>
+        <img src="background4.jpg" alt="Helping">
+    </div>
+</div>
+<footer>© 2025 Zero Hunger Initiative</footer>
+<script>
+    let listItems = document.querySelectorAll("#helpList li");
+    listItems.forEach(function(item) {
+        item.onmouseover = function() {
+            item.style.color = "green";
+        };
+        item.onmouseout = function() {
+            item.style.color = "black";
+        };
+    });
+    console.log("Help page JS loaded");
+</script>
+</body>
+</html>
