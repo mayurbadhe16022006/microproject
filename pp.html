@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Zero Hunger | Solutions</title>
     <link rel="stylesheet" href="style.css">
-     <a href="index.html">Home</a>
-    <a href="p2.html">Causes</a>
-    <a href="pp.html">Solutions</a>
-    <a href="sk.html">How You Can Help</a>
-    <a href="j1.html">Contact</a>
 </head>
 <body>
-<header><h1>Solutions to End Hunger</h1></header>
+
+<header>
+    <h1>Solutions to End Hunger</h1>
+    <p>Tackling hunger requires long-term, sustainable, and collaborative efforts. Below are some of the most effective solutions the world can implement to move closer to Zero Hunger.</p>
+</header>
+
 <nav>
     <a href="index.html">Home</a>
     <a href="p2.html">Causes</a>
@@ -18,29 +19,41 @@
     <a href="sk.html">How You Can Help</a>
     <a href="j1.html">Contact</a>
 </nav>
+
 <div class="container">
     <div class="card">
-        <h2>Possible Solutions</h2>
+        <h2>Effective Solutions</h2>
         <ol id="solutionList">
-            <li>Promote sustainable agriculture</li>
-            <li>Improve food distribution systems</li>
-            <li>Support small farmers</li>
-            <li>Reduce food waste globally</li>
-            <li>Ensure access to affordable nutritious food</li>
+            <li>Promote sustainable agriculture through eco-friendly farming methods.</li>
+            <li>Improve global and local food distribution networks to reduce inequality.</li>
+            <li>Support small farmers with technology, training, and fair market access.</li>
+            <li>Reduce food waste through better storage, awareness, and smart consumption.</li>
+            <li>Ensure access to affordable, nutritious food for low-income communities.</li>
+            <li>Invest in climate-resilient crops to fight the impact of climate change.</li>
+            <li>Encourage governments to strengthen social protection programs.</li>
+            <li>Increase funding for agricultural research and innovative food solutions.</li>
+            <li>Promote education on nutrition and sustainable food practices.</li>
         </ol>
-        <img src="background3.jpg" alt="Solutions Image">
+
+        <img src="background3.jpg" alt="Solutions Image" class="solution-img">
     </div>
 </div>
-<footer>© 2025 Zero Hunger Initiative</footer>
+
+<footer>
+    © 2025 Zero Hunger Initiative — Together, we can create a hunger-free world.
+</footer>
+
 <script>
     let items = document.querySelectorAll("#solutionList li");
 
     items.forEach(function(item) {
         item.onclick = function() {
-            alert("You clicked: " + item.textContent);
+            alert("Selected Solution:\n" + item.textContent);
         };
     });
-      console.log("Solutions page JS active");
+
+    console.log("Solutions page JavaScript active");
 </script>
+
 </body>
 </html>
